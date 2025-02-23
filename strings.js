@@ -50,5 +50,7 @@ console.log(challenge.charCodeAt(11));//J is 74, j is 106.
 console.log(challenge.indexOf('a')); // the indexof method returns the index(number) of the  1st occurance of character in a string. 'a' is at index 4. they start from 0.
 console.log(challenge.indexOf('a', challenge.indexOf('a')+1))// the second ocurance of A. challenge.indexOf('a', challenge.indexOf('a') + 1): This uses the result of the first indexOf('a') (which is 4), and adds 1 to start the search after the first 'a'. This will give you the second occurrence of 'a' (which is at index 12).
 console.log(challenge.lastIndexOf('a'));// it does exactly that. last occurance of a. 
-let x = 'You cant start a sentence with because, because because is a conjuction';// index(number) of 1st occurance of because. 
+let x = 'You cant start a sentence with because because because is a conjuction';// index(number) of 1st occurance of because. 
 console.log(x.indexOf('because'));//counts from zero to the 1st because, including spaces.
+console.log(x.search('because'));// its at position 31. would return -1 if not found. 
+// indexof searches simple exact substring. search() takes regular expressions, pattern matching, case-insensitive searches,and more complex search criteria. its superior to indexOf.
