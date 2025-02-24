@@ -28,6 +28,5 @@ console.log(`The perimeter of the triangle is: ${perimeter}`);
 
 //turns out prompt is a browser specific command and node.js doesnt recognise it.
 
-//option 2. do while loop.
 
 
