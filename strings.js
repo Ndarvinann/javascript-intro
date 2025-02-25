@@ -7,11 +7,11 @@ console.log(js.length); //.give the total length /number of xters//check out the
 
 // exercise 1
 
-console.log(4>3);
-console.log(4>=3);
-console.log(4<3);
-console.log(4<=3);
-console.log(4==4);
+console.log(4>3);// true
+console.log(4>=3); // true
+console.log(4<3);//false
+console.log(4<=3);//false
+console.log(4==4);// true(equality operator)
 console.log(4===4); // true (same value and type) strict quality type.
 console.log(4!=4); // false, inequality checker, returns true if 4=3.
 console.log(4!==4);//false. The strict inequality operator checks if the values are not equal in either value or type.
@@ -50,7 +50,61 @@ console.log(challenge.charCodeAt(11));//J is 74, j is 106.
 console.log(challenge.indexOf('a')); // the indexof method returns the index(number) of the  1st occurance of character in a string. 'a' is at index 4. they start from 0.
 console.log(challenge.indexOf('a', challenge.indexOf('a')+1))// the second ocurance of A. challenge.indexOf('a', challenge.indexOf('a') + 1): This uses the result of the first indexOf('a') (which is 4), and adds 1 to start the search after the first 'a'. This will give you the second occurrence of 'a' (which is at index 12).
 console.log(challenge.lastIndexOf('a'));// it does exactly that. last occurance of a. 
-let x = 'You cant start a sentence with because because because is a conjuction';// index(number) of 1st occurance of because. 
+let x = 'You cannot end a sentence with because because because is a conjunction';// index(number) of 1st occurance of because. 
 console.log(x.indexOf('because'));//counts from zero to the 1st because, including spaces.
 console.log(x.search('because'));// its at position 31. would return -1 if not found. 
 // indexof searches simple exact substring. search() takes regular expressions, pattern matching, case-insensitive searches,and more complex search criteria. its superior to indexOf.
+console.log(x.lastIndexOf('because'));
+console.log(challenge.trim());// removes spaces before and after "challenge"
+console.log(challenge.trimStart());// removes starting spaces
+console.log(challenge.trimEnd()); // removes ending spaces. 
+console.log(challenge.startsWith(`30`)); // returns true to show that the string starts with "30"
+console.log(challenge.endsWith(`Javascript`));
+console.log(challenge.match(`a`)); // treats the string as a literal search and stops after the 1st 'a'.
+console.log(challenge.match(/a/g)); // /a-- identifies all the a's in the string. /g is the global flag telling match to find ALL the a's. it returns an array of all the 'a's in the string.
+console.log(x.match(/because/g));// returns an array with all the becauses.
+console.log(`30 days of` .concat(`Javascript`));
+console.log(challenge.repeat(2));// prints the string twice.
+
+
+//breakout exercise
+if(typeof '10'===10){
+    console.log(`these numbers are equal.`)
+} 
+else{
+console.log(`These numbers are not equal.`)
+};// they are not equal.
+//make them equal. 
+if ('10'==10){
+    console.log(`These numbers are equal`);
+}
+else
+{
+    console.log(`They are still not equal`)
+};
+// no-2
+let value = parseFloat("9.8");// convert string to number
+if(value === 10){ // false. 9.8 isnt equal to 10.
+    console.log(`These numbers are equal`);
+}
+else
+{
+    console.log(`These numbers are not equal`)
+ value = 10;// reassigns the 9.8 to a 10.
+ console.log(`The final value is ${value}`);
+}
+//n0-3 
+let a = "Jargon";
+let b = "python";
+if ( a && b.includes("on")){
+    console.log(`Both words have "on"`)
+}
+else{
+    console.log(`None of these words have "on".`)
+};
+
+//No 4
+let c =`I hope this course is not full of jargon`;
+console.log(c.includes(`jargon`));
+
+//no-5
