@@ -1,3 +1,4 @@
+//these are things worth knowing. 
 //parseFloat() is a built-in JavaScript function that converts a given string into a floating-point (decimal) number. parse means to read and convert.ParseFloat is specifically designed to convert strings into numbers.
 //It ignores spaces at the beginning.It stops reading once it encounters a non-numeric character (except for the decimal point). If the first character is not a number or a sign (+ or -), it returns NaN (Not a Number). definition of parse in english. 
 // how it works 
@@ -81,23 +82,51 @@ case value 2
 break;
 default:
   code to execute if there are no matches
-} */
-let weatherNow = prompt(` Whats the weather like today?`)
-switch(weatherNow){
-  case 1:
-    weatherNow === `Rainy`;
-    console.log("You need to carry an umbrella");
-    break;
-    case 2:
-    weatherNow  === `Cloudy`
-    console.log(" you might need an umbrella");
-    break;
-    case 3:
-    weatherNow === `sunny`
-    console.log(`Go outside and photosynthesize`);
-    break;
-    default:
-      console.log(`Invalid response`);
-      break;
+} *
 }
+/*
+martin- chocolate
+brian - bread 
+lastone - sweets 
+default - not available. */
+let contact = 2;
+switch(contact){
+  case 1:
+  console.log("chocolate")
+  break;
+  case 2:
+  console.log("bread")
+  break;
+  case 3:
+  console.log("sweets")
+  break;
+  default:
+  console.log("not available")
+}
+
+  if( contact===2)
+    {
+    console.log("chocolate");
+  }
+  else if(contact===3)
+    {
+    console.log("bread");
+  }
+  else if(contact ===1)
+    {
+        console.log("sweets");
+      }
+else
+{
+            console.log(" not available")
+}
+
 //a regular expression literal is a way to create a regular expression object directly in your code. It's enclosed within forward slashes (/).(a/g)
+
+// functions.
+//--blocks of re-usable code that performs specific tasks. they help grp related statements together, execute specific operations then return values. they accept input values and that modify their behavior. 
+//syntax-- function keyword () {} --
+//e.g function greet(name){
+// return `Hello, ${name}!`
+// }; this is a function. 
+//const greet = (name)=> `Hello, ${name}!`; // another way of using functions. const and let store data. functions perfom actions.
