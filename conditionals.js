@@ -26,13 +26,3 @@ if(number>0){
   };
 // read about the switch and the ternary  operators.
 
-
-//Ternary operators
-//short-hand way of writing an if--else statement.called ternary because it takes three operands. a condition, a value toreturn if the condition is true, a value to return if the condition is false.
-// syntax-- condition? expressionIfTrue : expressionIfFalse. 
-//condition validates true or false. "?" is the ternary operator. :; expressionIfTrue: if the condition is true, a value is returned. (:) the colon separates the 'true' or 'false' . (false is the reverse)
-let age = prompt("How old are you?")
-console.log(age >=18? "Adult" : "Minor"); // if the message is greaterthan or equal to 18, return adult, otherwise, return minor. 
-// advantages-- code is shorter and more compact, very readable. dont nest them too deep.
-let score = prompt(`what did you score in Maths?`);
-console.log(score >= 60? "pass" : "fail"); 
