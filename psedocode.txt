@@ -1,0 +1,5 @@
+|| KGL layouts and whatifs and questions. 
+
+whats the difference between search and index of? 
+When is a ternary operator inappropriate, and when should you use a more traditional if...else if...else chain?
+Keep things validated, and sanitized. anticipate user input. 
