@@ -26,6 +26,25 @@ let c = parseFloat(prompt("Enter side C: "));
 let perimeter= a+b+c;
 console.log(`The perimeter of the triangle is: ${perimeter}`);
 
+// use of switch. 
+let weatherNow = prompt(` Whats the weather like today?`)
+switch(weatherNow){
+  case 1:
+    weatherNow === `Rainy`;
+    console.log("You need to carry an umbrella");
+    break;
+    case 2:
+    weatherNow  === `Cloudy`
+    console.log(" you might need an umbrella");
+    break;
+    case 3:
+    weatherNow === `sunny`
+    console.log(`Go outside and photosynthesize`);
+    break;
+    default:
+      console.log(`Invalid response`);
+      break;
+
 //turns out prompt is a browser specific command and node.js doesnt recognise it.
 
 

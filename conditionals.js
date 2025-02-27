@@ -32,8 +32,7 @@ if(number>0){
 // syntax-- condition? expressionIfTrue : expressionIfFalse. 
 //condition validates true or false. "?" is the ternary operator. :; expressionIfTrue: if the condition is true, a value is returned. (:) the colon separates the 'true' or 'false' . (false is the reverse)
 let age = prompt("How old are you?")
-let question = age >=18? "Adult" : "Minor";
-console.log(question); // if the message is greaterthan or equal to 18, return adult, otherwise, return minor. 
+console.log(age >=18? "Adult" : "Minor"); // if the message is greaterthan or equal to 18, return adult, otherwise, return minor. 
 // advantages-- code is shorter and more compact, very readable. dont nest them too deep.
 let score = prompt(`what did you score in Maths?`);
 console.log(score >= 60? "pass" : "fail"); 

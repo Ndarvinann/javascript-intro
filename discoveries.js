@@ -52,3 +52,52 @@ height = Number(height);
 const d = 0.5* base* height;
 console.log(`The area of the triangle is ${d}`);
 //This prompts the user for the base and height of a triangle, validates the input to ensure it's numeric and not empty, calculates the area, and then displays the result.
+
+//Ternary operators
+//short-hand way of writing an if--else statement.called ternary because it takes three operands. a condition, a value toreturn if the condition is true, a value to return if the condition is false.
+// syntax-- condition? expressionIfTrue : expressionIfFalse. 
+//condition validates true or false. "?" is the ternary operator. :; expressionIfTrue: if the condition is true, a value is returned. (:) the colon separates the 'true' or 'false' . (false is the reverse)
+let age = prompt("How old are you?")
+let question = age >=18? "Adult" : "Minor";
+console.log(question); // if the message is greaterthan or equal to 18, return adult, otherwise, return minor. 
+// advantages-- code is shorter and more compact, very readable. dont nest them too deep.
+let score = prompt(`what did you score in Maths?`);
+console.log(score >= 60? "pass" : "fail");
+// example2
+function isEven(number){
+  return number %2===0? "Even" : "odd";// return a number that gives no remainders when divided by 2. if yes, return even, otherwise, odd.
+}
+console.log(isEven(4)); // output is even
+console.log(isEven(7)); // output is odd
+
+// switch statements. === use only strict equality for comparisons. 
+//when you have multiple possible values to check against. (alternative to if, elseif, else) --THE SYNTAX--
+/*switch(expression){--this is evaluated once. results from here are compared against all the cases. 
+case value 1
+// code to execute if expressions===value 1
+break;// terminates the execution of the switch statement. 
+case value 2
+// code to execute if expression === value 2
+break;
+default:
+  code to execute if there are no matches
+} */
+let weatherNow = prompt(` Whats the weather like today?`)
+switch(weatherNow){
+  case 1:
+    weatherNow === `Rainy`;
+    console.log("You need to carry an umbrella");
+    break;
+    case 2:
+    weatherNow  === `Cloudy`
+    console.log(" you might need an umbrella");
+    break;
+    case 3:
+    weatherNow === `sunny`
+    console.log(`Go outside and photosynthesize`);
+    break;
+    default:
+      console.log(`Invalid response`);
+      break;
+}
+//a regular expression literal is a way to create a regular expression object directly in your code. It's enclosed within forward slashes (/).(a/g)
