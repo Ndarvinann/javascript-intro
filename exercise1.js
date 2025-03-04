@@ -42,10 +42,4 @@ switch(weatherNow){
     console.log(`Go outside and photosynthesize`);
     break;
     default:
-      console.log(`Invalid response`);
-      break;
-
-//turns out prompt is a browser specific command and node.js doesnt recognise it.
-
-
-
+      console.log(`Invalid response`)

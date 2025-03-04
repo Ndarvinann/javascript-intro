@@ -33,6 +33,37 @@ console.log(`Available stock with quantities:` ,stockInventory)
 //for( initialization, condition, increment/decrement){
     //conditions go here.}
 
-for( number=0; number<=100; number++){
-    console.log(number);
+//for( number=50; number<=93; number++){
+  //  console.log(number);
+//}
+//for(i=0; i<=12; i++){
+//console.log(`${i} *${i} = ${i*i}`)
+//};
+const prompt = require("prompt-sync")({sigint:true})
+let num = parseInt(prompt(`enter a number : `)); // user prompt
+if(!isNaN(num)){ //is the prompt valid.
+for(let i =0; i<=12; i++){
+    console.log(`${num} *${i} = ${num* i}`);
 }
+}
+else {
+    console.log(`please enter a valid number`);
+}
+
+let numbers =[1,3,5,7,9,11];
+//let total = numbers.reduce((sum , num)=>sum + num, 0);// reduce makes an array a single value( like sum, product, etc.)
+//console.log(total);
+
+//for loop
+let total = 0;
+for(let num of numbers){
+    total+=num;
+}
+console.log(total);
+
+let sum = 0;
+ for(x=0; x<numbers.length; x++){ //1st iteration (x = 0):  sum = sum + numbers[0] → sum = 0 + 1 → sum = 1. 1st out put is 1.  
+    //2nd iteration (x = 1): sum = sum + numbers[1] →sum = 1 + 3 → sum = 4 output is 4. 
+    sum = sum+numbers[x];
+    console.log(sum);
+ }

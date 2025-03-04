@@ -108,3 +108,8 @@ let c =`I hope this course is not full of jargon`;
 console.log(c.includes(`jargon`));
 
 //no-5
+function getRandomNumber(){ // define a function that takes no arguments 
+   return Math.floor(Math.random()*101);
+};
+console.log("Random Number:", getRandomNumber());
+ 
