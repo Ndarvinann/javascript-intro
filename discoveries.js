@@ -130,3 +130,53 @@ else
 // return `Hello, ${name}!`
 // }; this is a function. 
 //const greet = (name)=> `Hello, ${name}!`; // another way of using functions. const and let store data. functions perfom actions.
+// intoducing selectors and querrys. 
+let paragraph = document.querySelector('p'); // This selects the first paragraph element it finds in your HTML document.
+console.log(paragraph.textContent); //This accesses only the text content of that selected paragraph. leave it without if you want the string as it exists.
+// byTagName
+let paragraph1= document.getElementsByTagName('p');
+let firstParagraph = paragraph1[0];// js looks at these paragraphs like arrays and manipulates them that way. 1st index is 0.
+console.log(firstParagraph);
+
+//get each paragraph using querry selector. 
+ let paragraph2 = document.querySelector("#secondParagraph")//This selects the paragraph element with the specific ID "secondParagraph". 
+console.log(`paragraph2:`, paragraph2);
+// apart from the snytax, getElementById, is specifically designed to retrive a single element based soley on its id. its faster than the querryselector.  the query selector accepts any valid css selector as an argument. its takes ID(#id), class(.class), tagname(tagname), attributes[attribute] and as a result slower. 
+
+//node list is an ordered list of nodes(elements,text,attributes, comments). a nodeList is a way to store and manipulate collections of elements retrieved from the DOM.  //get all the p as a nodeList. document.querySelecorAll(tagname)//get all paragraphs using document.querySelectorAll.
+console.log (document.querySelectorAll('p')); // the output is a simplified view of what elements are in the list. all paragraphs, and their ids.
+//4 loop through the node list to get a text content of each paragraph.
+// using a for...of loop.
+for(let graph of graphs){ // for each graph in the list of graphs, do something. 
+  console.log(graph.textContent);// gets the actual text in the paragraph. 
+}
+// or trad. for loop 
+for(let i =0; i<graphs.length; i++){//checks that the value of i is less than the number of elements in the node list. the loop will run as long as this is true. 
+    console.log(graphs[i].textContent); //paragraphs[i]This accesses the paragraph element at the index i in the paragraphs NodeList. [0] the way we use this in arrays. 
+}
+//5 
+//Set a text content to paragraph the fourth paragraph,Fourth Paragraph.
+let x = document.getElementById('fourthParagraph'); // selects the paragraph with the fourthparagraphID.
+x. textContent = "fourth Paragraph"; //The .textContent property replaces the existing text content of the element with the new string you provide.
+
+//6
+// why the getElementById has .value at the end of it. check exercise3.html
+let kglstore = {
+  beans:100,
+  maize : 200,
+  cowPeas: 300,
+};
+
+function updateStock() {
+  let produce = document.getElementById("produce").value;
+  let newStock = document.getElementById('newStock').value; //.value retrives the current value the user has entered or selected. usually used with input elements(input, select,textarea.)
+  if(newStock !==""&&newStock>0){
+      kglstore[produce] = parseInt(newStock);
+
+      document.getElementById(produce +"Stock").textContent = newStock;
+      alert(`stock updated successfully!`)}
+      else {
+          alert(`Please enter valid stock quantity!`);
+      }
+    }
+//<p><div><span> elements dont get a .value because they are primarily used for displating content. they ge a .textContent.
