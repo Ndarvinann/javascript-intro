@@ -104,6 +104,6 @@ console.log(graphs);
     paragraph.textContent = `paragraph ${index+1}`; // text content.
     paragraph.setAttribute(`id`, `paragraph-${index + 1}`); 
     paragraph.className =`para-class-${index+1}`;
-  });
+  }); 
 
   // in relation to KGL, using Dom manipulation.
