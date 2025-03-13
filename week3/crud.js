@@ -2,8 +2,8 @@
 
 function create(){
     const paragraph= document.createElement('button')
-    paragraph.innerHTML=`what is your name`
-    document.body.appendChild(paragraph)
+    paragraph.innerHTML=`what is your name?` // pushes words between the paragraph2
+    document.body.appendChild(paragraph) // connect to the button.
     //console.log("clickbutton")
 }
 

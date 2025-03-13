@@ -1,4 +1,4 @@
-//event listner vs handler
+//event listener vs handler(consider this for the login/registration forms)
 //event Handler
 let btn = document.getElementById('btn')
 btn.onclick=function( ){
@@ -7,9 +7,9 @@ btn.onclick=function( ){
 btn.onclick=function( ){
     console.log(`overwritten`)
 }
-    //element. event = function
-// eventListener
+    //element.onClick = function. cons
 
+// eventListener. more dynamic than the handler.
 let btn = document.getElementById('btn')
 btn.addEventListener('click', function(){
     console.log(`button clicked`) // works with more than one function on one element, easier to edit
@@ -19,5 +19,5 @@ btn.addEventListener('click', function(){
 function sayHello() {
     console.log(`hello`)
 }
-btn.addEventListener(`click, sayHello`)
-btn.removeEventListener(`click`, sayHello)
+btn.addEventListener(`click`, sayHello)
+btn.removeEventListener(`click`, sayHello) 
